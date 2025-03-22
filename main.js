@@ -67,9 +67,38 @@ nextOne.onclick = function () {
 nextTwo.onclick = function () {
   nextTwo.hidden = true;
   nextThree.hidden = false;
+
+  document.getElementById("word-five").innerHTML = "DEAR";
+  document.getElementById("word-six").innerHTML = "FRI-";
+
+  document.getElementById("letter-note-three").innerHTML = "G";
+  document.getElementById("letter-note-four").innerHTML = "E";
+  document.getElementById("letter-note-five").innerHTML = "C";
+  document.getElementById("letter-note-six").innerHTML = "B";
+
+  lastLyric.style.display = "inline-block";
 };
 
 // Write anonymous event handler property and function for the third progress button
+
+nextThree.onclick = function () {
+  nextThree.hidden = true;
+  startOver.hidden = false;
+
+  document.getElementById("word-one").innerHTML = "HAP-";
+  document.getElementById("letter-note-one").innerHTML = "G";
+  document.getElementById("word-two").innerHTML = "PY";
+  document.getElementById("letter-note-two").innerHTML = "G";
+  document.getElementById("word-three").innerHTML = "BIRTH-";
+  document.getElementById("letter-note-three").innerHTML = "A";
+  document.getElementById("word-four").innerHTML = "DAY";
+  document.getElementById("letter-note-four").innerHTML = "G";
+  document.getElementById("word-five").innerHTML = "TO";
+  document.getElementById("letter-note-five").innerHTML = "C";
+  document.getElementById("word-six").innerHTML = "YOU!";
+  document.getElementById("letter-note-six").innerHTML = "B";
+  lastLyric.style.display = "none";
+};
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function () {
